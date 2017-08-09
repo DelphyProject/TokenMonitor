@@ -4,16 +4,31 @@
   "description": "token monitor",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ."
+    "start": "babel-node src",
+    "test": "eslint src && flow"
   },
   "author": "jsw@delphy.org",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.4.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-compat": "^1.0.4",
+    "eslint-plugin-flowtype": "^2.35.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "flow-bin": "^0.52.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
     "webpack": "^3.5.1"
   },
   "repository": "https://github.com/DelphyProject/TokenMonitor.git",
-  "dependencies": {
-    "color": "^2.0.0"
-  }
+  "dependencies": {},
+  "browserslist": [
+    "> 1%"
+  ]
 }
