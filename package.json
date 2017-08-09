@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node src",
-    "test": "eslint src && flow && jest --coverage"
+    "test": "eslint src && flow && jest --coverage",
+    "precommit": "yarn test",
+    "prepush": "yarn test"
   },
   "author": "jsw@delphy.org",
   "license": "ISC",
@@ -25,6 +27,7 @@
     "flow-bin": "^0.52.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.0",
+    "husky": "^0.14.3",
     "jest": "^20.0.4",
     "webpack": "^3.5.1"
   },
