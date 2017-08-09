@@ -1,5 +1,9 @@
 # TokenMonitor
 
-## How to run
+## run server
 
 	yarn start
+	
+## run test
+
+	yarn test
