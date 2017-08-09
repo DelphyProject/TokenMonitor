@@ -12,5 +12,8 @@
   "devDependencies": {
     "webpack": "^3.5.1"
   },
-  "repository": "https://github.com/DelphyProject/TokenMonitor.git"
+  "repository": "https://github.com/DelphyProject/TokenMonitor.git",
+  "dependencies": {
+    "color": "^2.0.0"
+  }
 }
