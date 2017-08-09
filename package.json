@@ -4,8 +4,13 @@
   "description": "token monitor",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
   },
-  "author": "",
-  "license": "ISC"
+  "author": "jsw@delphy.org",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.5.1"
+  },
+  "repository": "https://github.com/DelphyProject/TokenMonitor.git"
 }
