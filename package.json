@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node src",
-    "test": "eslint src && flow"
+    "test": "eslint src && flow && jest --coverage"
   },
   "author": "jsw@delphy.org",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
     "babel-preset-env": "^1.6.0",
     "babel-preset-flow": "^6.23.0",
     "eslint": "^4.4.1",
@@ -24,6 +25,7 @@
     "flow-bin": "^0.52.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.0",
+    "jest": "^20.0.4",
     "webpack": "^3.5.1"
   },
   "repository": "https://github.com/DelphyProject/TokenMonitor.git",
