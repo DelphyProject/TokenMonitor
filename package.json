@@ -21,7 +21,14 @@
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "compression": "^1.7.0",
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "immutable": "4.0.0-rc.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-hot-loader": "next",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.2.1"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -29,8 +36,10 @@
     "babel-eslint": "^7.2.3",
     "babel-jest": "^20.0.3",
     "babel-loader": "^7.1.1",
+    "babel-plugin-flow-react-proptypes": "^4.1.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
     "cross-env": "^5.0.5",
     "eslint": "^4.4.1",
     "eslint-config-airbnb": "^15.1.0",
