@@ -3,7 +3,7 @@
 import 'isomorphic-fetch'
 
 import { createAction } from 'redux-actions'
-import { helloEndpointRoute } from '../../shared/routes'
+import { helloEndpointRoute } from '../routes'
 
 
 export const SAY_HELLO = 'SAY_HELLO'

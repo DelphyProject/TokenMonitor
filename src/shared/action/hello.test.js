@@ -9,7 +9,7 @@ import {
   sayHelloAsyncFailure,
 } from './hello'
 
-import { helloEndpointRoute } from '../../shared/routes'
+import { helloEndpointRoute } from '../routes'
 
 const mockStore = configureMockStore([thunkMiddleware])
 
