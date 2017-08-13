@@ -9,6 +9,7 @@ import { Provider } from 'react-redux'
 // use applyMiddleware for redux-thunk. use compose for Redux Devtools
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux'
 import thunkMiddleware from 'redux-thunk'
+import { BrowserRouter } from 'react-router-dom'
 
 import App from './app'
 import helloReducer from './reducer/hello'
@@ -25,9 +26,11 @@ const rootEl = document.querySelector(APP_CONTAINER_SELECTOR)
 
 const wrapApp = (AppComponent, reduxStore) =>
   <Provider store={reduxStore}>
-    <AppContainer>
-      <AppComponent/>
-    </AppContainer>
+    <BrowserRouter>
+      <AppContainer>
+        <AppComponent/>
+      </AppContainer>
+    </BrowserRouter>
   </Provider>
 
 ReactDOM.render(wrapApp(App, store), rootEl)
