@@ -1,15 +1,15 @@
 // @flow
 
 import 'babel-polyfill'
-import React from 'react'
+
 import Immutable from 'immutable'
+import React from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 import { Provider } from 'react-redux'
-// use applyMiddleware for redux-thunk. use compose for Redux Devtools
+import { BrowserRouter } from 'react-router-dom'
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux'
 import thunkMiddleware from 'redux-thunk'
-import { BrowserRouter } from 'react-router-dom'
 
 import App from '../shared/app'
 import helloReducer from '../shared/reducer/hello'
