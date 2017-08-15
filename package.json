@@ -2,10 +2,9 @@
   "name": "token-monitor",
   "version": "1.0.0",
   "license": "ISC",
+  "repository": "https://github.com/DelphyProject/TokenMonitor.git",
   "author": "jsw@delphy.org",
-  "browserslist": [
-    "> 1%"
-  ],
+  "browserslist": ["> 1%"],
   "scripts": {
     "start": "yarn dev:start",
     "dev:start": "nodemon -e js,jsx --ignore lib --ignore dist --exec babel-node src/server",
@@ -65,6 +64,5 @@
     "rimraf": "^2.6.1",
     "webpack": "^3.5.2",
     "webpack-dev-server": "^2.7.1"
-  },
-  "repository": "https://github.com/DelphyProject/TokenMonitor.git"
+  }
 }

@@ -19,8 +19,7 @@ const renderApp = (location: string, plainPartialState: ?Object, routerContext: 
       <StaticRouter location={location} context={routerContext}>
         <App/>
       </StaticRouter>
-    </Provider>
-  )
+    </Provider>)
   const head = Helmet.rewind()
 
   return (
@@ -29,7 +28,6 @@ const renderApp = (location: string, plainPartialState: ?Object, routerContext: 
       <head>
         ${head.title}
         ${head.meta}
-        <title>FIX ME</title>
         <link rel="stylesheet" href="${STATIC_PATH}/css/style.css">
       </head>
       <body>
