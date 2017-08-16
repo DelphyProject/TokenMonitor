@@ -4,7 +4,9 @@
   "license": "ISC",
   "repository": "https://github.com/DelphyProject/TokenMonitor.git",
   "author": "jsw@delphy.org",
-  "browserslist": ["> 1%"],
+  "browserslist": [
+    "> 1%"
+  ],
   "scripts": {
     "start": "yarn dev:start",
     "dev:start": "nodemon -e js,jsx --ignore lib --ignore dist --exec babel-node src/server",
@@ -46,6 +48,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
+    "coveralls": "^2.13.1",
     "cross-env": "^5.0.5",
     "eslint": "^4.4.1",
     "eslint-config-airbnb": "^15.1.0",
