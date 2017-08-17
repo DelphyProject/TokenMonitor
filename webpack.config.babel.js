@@ -36,6 +36,6 @@ export default {
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
-    new webpack.NodeEnvironmentPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
   ],
 }
