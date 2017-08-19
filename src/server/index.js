@@ -1,8 +1,13 @@
 // @flow
 
+import './dotenv'
+
+/* eslint-disable import/first */
+
 import compression from 'compression'
 import express from 'express'
 import { Server } from 'http'
+import favicon from 'serve-favicon'
 import socketIO from 'socket.io'
 
 import routing from './routing'
@@ -17,6 +22,7 @@ const io = socketIO(http)
 setUpSocket(io)
 
 app.use(compression())
+app.use(favicon('public/img/favicon.ico'))
 app.use(STATIC_PATH, express.static('dist'))
 app.use(STATIC_PATH, express.static('public'))
 
